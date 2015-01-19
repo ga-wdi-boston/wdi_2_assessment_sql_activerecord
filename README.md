@@ -12,6 +12,13 @@ By the end of this, students should be able to:
 
 ## Instructions
 
+You *must* run:
+
+- `rake db:create`
+- `rake db:migrate`
+- `rake db:test:prepare`
+
+
 Include explict step-by-step instructions about the goals of the assignment, and how to run the code.
 
 Make sure to wrap section of code in appropriate markdown like `ls -al`, and denote the language as below for longer sections:
