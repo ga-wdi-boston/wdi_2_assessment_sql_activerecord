@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Guitar, type: :model do
   # QUESTION 1:
-  # Create a migration to add a new table called keyboards
+  # Create a migration to add a new table called guitars
   # This table should have the following columns (name/type):
   # make - String
   # model - String
@@ -21,15 +21,18 @@ RSpec.describe Guitar, type: :model do
   # You should write the SQL to solve this in:
   # app/models/guitar.rb
   # in the self.fender_guitars method
-  # That method should return a string of raw SQL
+  # That method should return a string of raw SQL, no ActiveRecord!
   describe '#fender_guitars' do
+    before(:each) do
+      @guitar_one = Guitar.create!(make: 'Fender')
+      @guitar_two = Guitar.create!(make: 'Fender')
+      @gibson_guitar = Guitar.create!(make: 'Gibson')
+    end
+
     it 'returns SQL that when executed will return all Fender guitars' do
-      guitar_one = Guitar.create!(make: 'Fender')
-      guitar_two = Guitar.create!(make: 'Fender')
-      gibson_guitar = Guitar.create!(make: 'Gibson')
       guitars = Guitar.find_by_sql Guitar.fender_guitars
       expect(guitars.first).to be_a Guitar
-      expect(guitars.first).to eq guitar_one
+      expect(guitars.first).to eq @guitar_one
     end
   end
 end
