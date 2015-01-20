@@ -1,46 +1,33 @@
 ![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
 
-# Assignment Name (Ruby String Lab)
+# Assessment: Controllers, Routes, Active Record and SQL
 
 ## Objectives
 
-By the end of this, students should be able to:
+In this assessment, students are asked to demonstrate knowledge of:
 
-- Objective 1
-- Objective 2
-- Objective 3
+- Creating resourceful routes that map to controller actions
+- Creating migrations to create/alter a schema
+- Writing SQL SELECT queries
+- Using Active Record methods to retrieve records
+- Assigning results of Active Record methods to instance methods in controllers
 
 ## Instructions
 
-You *must* run:
+Fork and clone this repo. Then run the following commands prior to starting to code:
 
-- `rake db:create`
-- `rake db:migrate`
-- `rake db:test:prepare`
+- `cd wdi_2_assessment_sql_activerecord`
+- `bundle install`
+- `rake db:create db:migrate db:test:prepare`
 
+Run your tests with `rspec spec`. Write code to make them pass.
 
-Include explict step-by-step instructions about the goals of the assignment, and how to run the code.
-
-Make sure to wrap section of code in appropriate markdown like `ls -al`, and denote the language as below for longer sections:
-
-```ruby
-x = 2
-y = 3
-puts x + y
-```
-
-## Bonus (Optional Section)
-
-If you're looking for extra challenge or practice once you've completed the above, try to...
-
-## Notes
-
-Gotcha's and extra information
+Make a git commit, push your code to Github, and make a Pull Request to turn in your work.
 
 ## Additional Resources
 
-List additional related resources such as videos, blog posts and official documentation.
+- [RailsGuide: Routing](http://guides.rubyonrails.org/routing.html)
+- [RailsGuide: Action Controller](http://guides.rubyonrails.org/action_controller_overview.html)
+- [RailsGuide: Migrations](http://guides.rubyonrails.org/active_record_migrations.html)
+- [RailsGuide: Active Record](http://guides.rubyonrails.org/active_record_querying.html)
 
-- Item 1
-- Item 2
-- Item 3
