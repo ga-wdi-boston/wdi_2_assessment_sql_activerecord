@@ -31,6 +31,7 @@ RSpec.describe Guitar, type: :model do
 
     it 'returns SQL that when executed will return all Fender guitars' do
       guitars = Guitar.find_by_sql Guitar.fender_guitars
+      expect(guitars.count).to be 2
       expect(guitars.first).to be_a Guitar
       expect(guitars.first).to eq @guitar_one
     end
