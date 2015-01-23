@@ -11,15 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150119205100) do
+ActiveRecord::Schema.define(version: 20150123143140) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "guitars", force: :cascade do |t|
-    t.string  "make"
-    t.string  "model"
-    t.decimal "price"
+    t.text  "make"
+    t.text  "model"
+    t.float "price"
   end
 
 end
