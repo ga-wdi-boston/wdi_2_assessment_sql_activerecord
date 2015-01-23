@@ -1,8 +1,6 @@
 class GuitarsController < ApplicationController
    def index
-     Rails.application.guitars.draw do
-    get 'rails_guitars', to: 'rails_guitars#index'
-    end
+    @guitars = Guitar.all #i originally had this here, but deleted it by mistake bc my tests were still failing so i thought i was wrong.
   end
 
   def show
