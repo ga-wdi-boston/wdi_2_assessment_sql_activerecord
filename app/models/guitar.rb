@@ -5,6 +5,11 @@ class Guitar < ActiveRecord::Base
     # Do not run an ActiveRecord method in here!
     # You are looking for a string similar to:
     # SELECT * FROM posts
+    @guitar_one = Guitar.create!(make: 'Fender')
+    @guitar_two = Guitar.create!(make: 'Fender')
+    @guitar_three = Guitar.create!(make: 'Fender')
+
+    "SELECT * FROM guitars where make = 'FENDER'"
 
   end
 end
