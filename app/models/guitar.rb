@@ -5,6 +5,7 @@ class Guitar < ActiveRecord::Base
     # Do not run an ActiveRecord method in here!
     # You are looking for a string similar to:
     # SELECT * FROM posts
+    "SELECT * from guitars WHERE make = 'Fender'"
 
   end
 end
