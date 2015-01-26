@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :guitars
+  resources :guitars, only: [:index]
 end
