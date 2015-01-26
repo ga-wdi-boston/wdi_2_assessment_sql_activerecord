@@ -6,5 +6,7 @@ class Guitar < ActiveRecord::Base
     # You are looking for a string similar to:
     # SELECT * FROM posts
 
+    # SELECT * FROM guitars
+
   end
 end
