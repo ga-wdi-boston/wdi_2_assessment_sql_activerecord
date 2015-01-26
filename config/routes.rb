@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-
-  resources :guitars
+  get '/guitars', to: 'guitars#index'
+  # resources :guitars, only [:index]
 end
