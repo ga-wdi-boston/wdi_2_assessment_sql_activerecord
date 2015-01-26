@@ -6,10 +6,9 @@ class Guitar < ActiveRecord::Base
     # You are looking for a string similar to:
     # SELECT * FROM posts
 
-    find_by_sql(
       "SELECT *
       FROM Guitars
       WHERE Make = 'Fender'"
-      )
+
   end
 end
