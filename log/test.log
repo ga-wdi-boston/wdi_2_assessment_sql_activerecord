@@ -874,3 +874,253 @@ TypeError: wrong argument type nil (expected String):
 TypeError: wrong argument type nil (expected String): 
 >>>>>>> ae956eda150e95502c2dc27c17cbd8ca16727c5f
   [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (115.6ms)[0m  [1mDROP DATABASE IF EXISTS "wdi_2_assessment_sql_activerecord_test"[0m
+  [1m[35m (360.3ms)[0m  CREATE DATABASE "wdi_2_assessment_sql_activerecord_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (5.4ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (2.0ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.9ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "guitars" does not exist
+LINE 5:                WHERE a.attrelid = '"guitars"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"guitars"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "guitars" does not exist
+LINE 5:                WHERE a.attrelid = '"guitars"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"guitars"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "guitars" does not exist
+LINE 5:                WHERE a.attrelid = '"guitars"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"guitars"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (127.2ms)[0m  [1mDROP DATABASE IF EXISTS "wdi_2_assessment_sql_activerecord_test"[0m
+  [1m[35m (380.1ms)[0m  CREATE DATABASE "wdi_2_assessment_sql_activerecord_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (3.9ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (1.7ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "guitars" does not exist
+LINE 5:                WHERE a.attrelid = '"guitars"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"guitars"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by GuitarsController#index as HTML
+  Rendered guitars/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "guitars" does not exist
+LINE 5:                WHERE a.attrelid = '"guitars"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"guitars"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+PG::UndefinedTable: ERROR:  relation "guitars" does not exist
+LINE 5:                WHERE a.attrelid = '"guitars"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"guitars"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (119.2ms)[0m  [1mDROP DATABASE IF EXISTS "wdi_2_assessment_sql_activerecord_test"[0m
+  [1m[35m (370.6ms)[0m  CREATE DATABASE "wdi_2_assessment_sql_activerecord_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (18.0ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (2.2ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (118.7ms)[0m  [1mDROP DATABASE IF EXISTS "wdi_2_assessment_sql_activerecord_test"[0m
+  [1m[35m (407.3ms)[0m  CREATE DATABASE "wdi_2_assessment_sql_activerecord_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (8.9ms)[0m  CREATE TABLE "guitars" ("id" serial primary key, "make" character varying, "model" character varying, "price" decimal) 
+  [1m[36m (16.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (2.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.6ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150126142152')
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "guitars" DEFAULT VALUES RETURNING "id"[0m
+  [1m[35m (0.6ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "guitars" DEFAULT VALUES RETURNING "id"
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "guitars" DEFAULT VALUES RETURNING "id"[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GuitarsController#index as HTML
+  Rendered guitars/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by GuitarsController#index as HTML
+  Rendered guitars/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "guitars" ("make", "model", "price") VALUES ($1, $2, $3) RETURNING "id"  [["make", "Fender"], ["model", "Jazzmaster"], ["price", "1599.99000000000000909494701772928237915"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "guitars" ("make") VALUES ($1) RETURNING "id"[0m  [["make", "Fender"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "guitars" ("make") VALUES ($1) RETURNING "id"  [["make", "Fender"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "guitars" ("make") VALUES ($1) RETURNING "id"[0m  [["make", "Gibson"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mGuitar Load (0.5ms)[0m  [1m[0m
+TypeError: wrong argument type nil (expected String): 
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "guitars" DEFAULT VALUES RETURNING "id"
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "guitars" DEFAULT VALUES RETURNING "id"[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "guitars" DEFAULT VALUES RETURNING "id"
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuitarsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by GuitarsController#index as HTML
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "guitars" ("make", "model", "price") VALUES ($1, $2, $3) RETURNING "id"[0m  [["make", "Fender"], ["model", "Jazzmaster"], ["price", "1599.99000000000000909494701772928237915"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "guitars" ("make") VALUES ($1) RETURNING "id"  [["make", "Fender"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "guitars" ("make") VALUES ($1) RETURNING "id"[0m  [["make", "Fender"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "guitars" ("make") VALUES ($1) RETURNING "id"  [["make", "Gibson"]]
+  [1m[36m (0.7ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mGuitar Load (0.4ms)[0m  
+TypeError: wrong argument type nil (expected String): 
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "guitars" DEFAULT VALUES RETURNING "id"
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "guitars" DEFAULT VALUES RETURNING "id"[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "guitars" DEFAULT VALUES RETURNING "id"
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GuitarsController#index as HTML
+  Rendered guitars/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+  [1m[35mGuitar Load (0.4ms)[0m  SELECT "guitars".* FROM "guitars"
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by GuitarsController#index as HTML
+  Rendered guitars/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "guitars" ("make", "model", "price") VALUES ($1, $2, $3) RETURNING "id"  [["make", "Fender"], ["model", "Jazzmaster"], ["price", "1599.99000000000000909494701772928237915"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "guitars" ("make") VALUES ($1) RETURNING "id"[0m  [["make", "Fender"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "guitars" ("make") VALUES ($1) RETURNING "id"  [["make", "Fender"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "guitars" ("make") VALUES ($1) RETURNING "id"[0m  [["make", "Gibson"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mGuitar Load (0.4ms)[0m  [1m[0m
+TypeError: wrong argument type nil (expected String): 
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
