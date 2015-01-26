@@ -1,3 +1,4 @@
 class GuitarsController < ApplicationController
-  resources :guitars
+ # resources :guitars
+  get '/guitars' to: "guitars#index"
 end
