@@ -1,0 +1,8 @@
+<%= pluralize(@guitars.count, 'Guitar') %>
+
+<ul>
+<% @guitars.each do |guitar| %>
+<li>Name: <%=guitar.name %>, Price: <%= guitar
+  .price %></li>
+<% end %>
+</ul>

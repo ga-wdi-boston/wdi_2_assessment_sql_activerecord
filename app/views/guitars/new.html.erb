@@ -1,0 +1,15 @@
+ <p>Create a new Guitar </p>
+
+ <h3>New Guitar<h3>
+  <%= form_for @guitar do |f| %>
+    <%= f.label :name %> <br>
+    <%= f.text_field :name %>
+    <br>
+    <%= f.label :description %> <br>
+    <%= f.text_area :description %>
+    <br>
+    <%= f.label :price %> <br>
+    <%= f.text_field :price %>
+    <br>
+    <%= f.submit %>
+  <% end %>
