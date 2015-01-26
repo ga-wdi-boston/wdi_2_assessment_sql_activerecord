@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Guitars.create
+
+a_guitar = Guitar.create(make: 'Fender', model: 'Jazzmaster', price: 1599
